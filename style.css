@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'Dela Gothic One';
+    src: url('Dela Gothic One Regular.eot');
+    src: url('Dela Gothic One Regular.eot?#iefix') format('embedded-opentype'),
+        url('Dela Gothic One Regular.woff2') format('woff2'),
+        url('Dela Gothic One Regular.woff') format('woff'),
+        url('Dela Gothic One Regular.ttf') format('truetype'),
+        url('Dela Gothic One Regular.svg#Dela Gothic One Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2039;
+}
+
+@font-face {
+    font-family: 'Raleway Light';
+    src: url('Raleway Light.eot');
+    src: url('Raleway Light.eot?#iefix') format('embedded-opentype'),
+        url('Raleway Light.woff2') format('woff2'),
+        url('Raleway Light.woff') format('woff'),
+        url('Raleway Light.ttf') format('truetype'),
+        url('Raleway Light.svg#Raleway Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2044;
+}
+
+@font-face {
+    font-family: 'Raleway SemiBold';
+    src: url('Raleway SemiBold.eot');
+    src: url('Raleway SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Raleway SemiBold.woff2') format('woff2'),
+        url('Raleway SemiBold.woff') format('woff'),
+        url('Raleway SemiBold.ttf') format('truetype'),
+        url('Raleway SemiBold.svg#Raleway SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2044;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway Bold.eot');
+    src: url('Raleway Bold.eot?#iefix') format('embedded-opentype'),
+        url('Raleway Bold.woff2') format('woff2'),
+        url('Raleway Bold.woff') format('woff'),
+        url('Raleway Bold.ttf') format('truetype'),
+        url('Raleway Bold.svg#Raleway Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2044;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway Regular.eot');
+    src: url('Raleway Regular.eot?#iefix') format('embedded-opentype'),
+        url('Raleway Regular.woff2') format('woff2'),
+        url('Raleway Regular.woff') format('woff'),
+        url('Raleway Regular.ttf') format('truetype'),
+        url('Raleway Regular.svg#Raleway Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2044;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+ul,
+li {
+    text-transform: none;
+    text-decoration: none;
+    /* font-weight: normal; */
+    color: #000000;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Raleway Light', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    width: 100%;
+
+}
+
+.container {
+    width: 94.66%;
+    margin: 0 auto;
+}
+
+.img {
+    display: block;
+    width: 100%;
+}
+
+/* Text decoration */
+
+.text {
+    font-family: 'Raleway', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 166.19%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.text_pointed {
+    text-decoration: underline;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.desktop {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Header */
+
+.nav {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-item__arrow {
+    display: inline-block;
+    background-image: url(./img/arrov-down_icon.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 5px;
+    margin: 9px 10px 10px 10px;
+}
+
+.nav__burger {
+ align-self: flex-start;
+}
+
+.nav__logo {
+    align-self: center;
+}
+
+
+
+
+/* Footer */
+
+.footer-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+
+.footer__nav {
+    max-width: 280px;
+}
+
+.footer__column-wrapper_big {
+    display: flex;
+}
+
+.footer__column-wrapper {
+    margin-right: 20px;
+
+}
+
+.footer__column-wrapper:last-child {
+    margin-right: 0;
+}
+
+.footer__nav-item {
+    font-family: 'Raleway', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 166.19%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.footer__nav-link_red {
+    font-weight: 700;
+    color: #DA1F39;
+}
+
+.footer__social-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    max-width: fit-content;
+    
+}
+
+.footer__social-ico {
+    width: 22px;
+    height: 22px;
+}
+
+.footer__address {
+    font-style: normal;
+}
+
+
+
+.footer__copyright {
+    align-self: flex-start;
+}
+
+@media screen and (min-width: 700px) {
+    .footer__social {
+        order: 3;
+    }
+
+    .footer__social-list {
+        max-width: none;
+    }
+
+    .footer__copyright {
+        align-self: center;
+    }
+}
