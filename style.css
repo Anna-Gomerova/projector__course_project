@@ -103,18 +103,39 @@ body {
 }
 
 .container {
+    min-height: 100vw;
+    display: grid;
+    grid-template: minmax(40px, auto) 1fr minmax(355px, auto) / 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    /* width: 94.66%;
+    margin: 0 auto; */
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+.wrapper {
     width: 94.66%;
     margin: 0 auto;
 }
 
-/* .wrapper {
-    width: 94.66%;
-    margin: 0 auto;
-}
-
-.wrapper_footer-main {
+.wrapper_gray {
     background-color: #F4F4F4;
-} */
+}
 
 .img {
     display: block;
@@ -427,6 +448,8 @@ color: #000000;
 }
 
 @media screen and (min-width: 1024px) {
+    
+
     .desktop {
         display: block;
     }
