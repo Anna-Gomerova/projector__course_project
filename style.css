@@ -105,7 +105,7 @@ body {
 .container {
     min-height: 100vw;
     display: grid;
-    grid-template: minmax(40px, auto) 1fr minmax(355px, auto) / 1fr;
+    grid-template: minmax(40px, auto) 1fr auto / 1fr;
     grid-template-areas:
         "header"
         "main"
@@ -297,6 +297,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
+    align-items: center;
 }
 
 .catalog__title {
@@ -479,6 +480,10 @@ body {
     align-self: flex-start;
 }
 
+.lang__item {
+    display: none;
+}
+
 
 
 @media screen and (min-width: 700px) {
@@ -591,6 +596,12 @@ body {
         grid-row: auto;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
+
+    /* .footer__logo-img {
+        display: block;
+        width: 184px;
+        height: 32px;
+    } */
 
     .footer__nav {
         grid-area: fn;
