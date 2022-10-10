@@ -597,11 +597,10 @@ body {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
-    /* .footer__logo-img {
+    .footer__logo {
         display: block;
-        width: 184px;
-        height: 32px;
-    } */
+        
+    }
 
     .footer__nav {
         grid-area: fn;
