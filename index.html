@@ -142,7 +142,7 @@
                 </div>
                 <div class="catalog">
                     <aside class="filters_desktop desktop">
-                        <div class="section__content faq-list catalog__filters-item size">
+                        <!-- <div class="section__content faq-list catalog__filters-item size">
                             <div class="section__item faq size__list">
                                 <input class="faq__input size__input" type="checkbox" id="size-title">
                                 <label class="faq__heading size__heading" for="size-title"><spun class="heading-wrapper h3-title">ЯКІ ПЕРЕВАГИ УЧАСТІ У ПРОГРАМІ ДЛЯ
@@ -151,7 +151,31 @@
                                     розвитку
                                     для адміністрації та педагогічного колективу, а також середовище постійного руху до нових освітніх
                                     програм в співтоваристві однодумців.</p>
-                            </div>
+                            </div> -->
+                            <form class="filter-form" id="form" action="result.html" method="post">
+    
+                                <fieldset class="filter-form__group sizes">
+                                <!-- <span class="wrapper-title"> -->
+                                    <input class=" filter-form__input-main" type="checkbox" id="sizes-title" />
+                                    <label class=" filter-form__label-main" for="sizes-title">Розмір</label>
+                                <!-- </span> -->
+                                    <span class="filter-form__wrapper">
+                                        <input class="filter-form__input" type="checkbox" id="32" name="32" value="32" />
+                                        <label class="filter-form__label" for="32">32 | XXS (53)</label>
+                                        <input class="filter-form__input" type="checkbox" id="34" name="34" value="34" />
+                                        <label class="filter-form__label" for="34">34 | XS (60)</label>
+                                        <input class="filter-form__input" type="checkbox" id="36" name="36" value="36" />
+                                        <label class="filter-form__label" for="34">36 | S (60)</label>
+                                    </span>
+                                    
+                                </fieldset>
+                            
+                                <!-- <div class="filter-form__submit button">
+                                    <input type="submit" value="Відфільтрувати" >
+                            
+                                </div> -->
+                                <!-- Кнопку приховано доки не обраний жодний чекбокс -->
+                            </form>
     
                     </aside>
                     <section class="catalog__content">
