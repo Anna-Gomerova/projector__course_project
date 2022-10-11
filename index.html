@@ -142,40 +142,97 @@
                 </div>
                 <div class="catalog">
                     <aside class="filters_desktop desktop">
-                        <!-- <div class="section__content faq-list catalog__filters-item size">
-                            <div class="section__item faq size__list">
-                                <input class="faq__input size__input" type="checkbox" id="size-title">
-                                <label class="faq__heading size__heading" for="size-title"><spun class="heading-wrapper h3-title">ЯКІ ПЕРЕВАГИ УЧАСТІ У ПРОГРАМІ ДЛЯ
-                                    ШКОЛИ?</spun></label>
-                                <p class="faq__text text">Школа отримує позашкільні заходи для дітей, можливості професійного
-                                    розвитку
-                                    для адміністрації та педагогічного колективу, а також середовище постійного руху до нових освітніх
-                                    програм в співтоваристві однодумців.</p>
-                            </div> -->
+        
                             <form class="filter-form" id="form" action="result.html" method="post">
     
-                                <fieldset class="filter-form__group sizes">
+                                <fieldset class="filter sizes">
                                 
-                                    <input class=" filter-form__input-main" type="checkbox" id="sizes-title" />
-                                    <label class=" filter-form__label-main" for="sizes-title">Розмір</label>
+                                    <input class=" filter__input-main" type="checkbox" id="sizes-title" />
+                                    <label class=" filter__label-main" for="sizes-title">Розмір</label>
             
-                                    <span class="filter-form__wrapper">
-                                        <input class="filter-form__input" type="checkbox" id="32" name="32" value="32" />
-                                        <label class="filter-form__label" for="32">32 | XXS (53)</label>
-                                        <input class="filter-form__input" type="checkbox" id="34" name="34" value="34" />
-                                        <label class="filter-form__label" for="34">34 | XS (60)</label>
-                                        <input class="filter-form__input" type="checkbox" id="36" name="36" value="36" />
-                                        <label class="filter-form__label" for="36">36 | S (60)</label>
-                                        <input class="filter-form__input" type="checkbox" id="38" name="38" value="38" />
-                                        <label class="filter-form__label" for="38">38 | M (60)</label>
-                                        <input class="filter-form__input" type="checkbox" id="40" name="40" value="40" />
-                                        <label class="filter-form__label" for="40">40 | L (60)</label>
-                                        <input class="filter-form__input" type="checkbox" id="42" name="42" value="42" />
-                                        <label class="filter-form__label" for="42">42 | XL (58)</label>
-                                        <input class="filter-form__input" type="checkbox" id="32" name="46" value="46" />
-                                        <label class="filter-form__label" for="46">46 | XXL (13)</label>
-                                        <input class="filter-form__input" type="checkbox" id="32" name="48" value="48" />
-                                        <label class="filter-form__label" for="48">48 | XXXL (4)</label>
+                                    <span class="filter__wrapper">
+                                        <input class="filter__input" type="checkbox" id="32" name="32" value="32" />
+                                        <label class="filter__label" for="32">32 | XXS (53)</label>
+                                        <input class="filter__input" type="checkbox" id="34" name="34" value="34" />
+                                        <label class="filter__label" for="34">34 | XS (60)</label>
+                                        <input class="filter__input" type="checkbox" id="36" name="36" value="36" />
+                                        <label class="filter__label" for="36">36 | S (60)</label>
+                                        <input class="filter__input" type="checkbox" id="38" name="38" value="38" />
+                                        <label class="filter__label" for="38">38 | M (60)</label>
+                                        <input class="filter__input" type="checkbox" id="40" name="40" value="40" />
+                                        <label class="filter__label" for="40">40 | L (60)</label>
+                                        <input class="filter__input" type="checkbox" id="42" name="42" value="42" />
+                                        <label class="filter__label" for="42">42 | XL (58)</label>
+                                        <input class="filter__input" type="checkbox" id="46" name="46" value="46" />
+                                        <label class="filter__label" for="46">46 | XXL (13)</label>
+                                        <input class="filter__input" type="checkbox" id="32" name="48" value="48" />
+                                        <label class="filter__label" for="48">48 | XXXL (4)</label>
+                                        
+                                    </span>
+                                    
+                                </fieldset>
+
+                                <fieldset class="filter color">
+                                
+                                    <input class=" filter__input-main" type="checkbox" id="color-title" />
+                                    <label class=" filter__label-main" for="color-title">Колір</label>
+            
+                                    <span class="filter__wrapper">
+                                        <input class="filter__input" type="checkbox" id="white" name="white" value="white" />
+                                        <label class="filter__label" for="white">білий (13)</label>
+                                        <input class="filter__input" type="checkbox" id="black" name="black" value="black" />
+                                        <label class="filter__label" for="black" >чорний (8)</label>
+                                        <input class="filter__input" type="checkbox" id="beige"  name="beige"  value="beige"  />
+                                        <label class="filter__label" for="beige" >бежевий (3)</label>
+                                        <input class="filter__input" type="checkbox" id="green"  name="green"  value="green"  />
+                                        <label class="filter__label" for="green" >зелений (7)</label>
+                                        <input class="filter__input" type="checkbox" id="blue"  name="blue"  value="blue"  />
+                                        <label class="filter__label" for="blue" >синій (10)</label>
+                            
+                                    </span>
+                                    
+                                </fieldset>
+
+                                <fieldset class="filter season">
+                                
+                                    <input class=" filter__input-main" type="checkbox" id="season-title" />
+                                    <label class=" filter__label-main" for="season-title">Сезон</label>
+            
+                                    <span class="filter__wrapper">
+                                        <input class="filter__input" type="checkbox" id="easy" name="easy" value="easy" />
+                                        <label class="filter__label" for="easy">Easy collection (3)</label>
+                                        <input class="filter__input" type="checkbox" id="all" name="all" value="all" />
+                                        <label class="filter__label" for="all" >Усі сезони (46)</label>
+            
+                                    </span>
+                                    
+                                </fieldset>
+
+                                <fieldset class="filter fabric">
+                                
+                                    <input class=" filter__input-main" type="checkbox" id="fabric-title" />
+                                    <label class=" filter__label-main" for="fabric-title">Тканина</label>
+            
+                                    <span class="filter__wrapper">
+                                        <input class="filter__input" type="checkbox" id="linen" name="linen" value="linen" />
+                                        <label class="filter__label" for="linen">Льон (60)</label>
+                                        <input class="filter__input" type="checkbox" id="satin" name="satin" value="satin" />
+                                        <label class="filter__label" for="satin" >Сатин (1)</label>
+                                        
+                                    </span>
+                                    
+                                </fieldset>
+
+                                <fieldset class="filter sleeve">
+                                
+                                    <input class=" filter__input-main" type="checkbox" id="sleeve-title" />
+                                    <label class=" filter__label-main" for="sleeve-title">Рукав</label>
+            
+                                    <span class="filter__wrapper">
+                                        <input class="filter__input" type="checkbox" id="long" name="long" value="long" />
+                                        <label class="filter__label" for="long">Довгий рукав (49)</label>
+                                        <input class="filter__input" type="checkbox" id="3/4" name="3/4" value="3/4" />
+                                        <label class="filter__label" for="3/4" >3/4 рукав (11)</label>
                                         
                                     </span>
                                     
@@ -185,7 +242,7 @@
                                     <input type="submit" value="Відфільтрувати" >
                             
                                 </div> -->
-                                <!-- Кнопку приховано доки не обраний жодний чекбокс -->
+                                <!-- Кнопку приховано доки не обраний жодний чекбокс - ще не реалізувала -->
                             </form>
     
                     </aside>
