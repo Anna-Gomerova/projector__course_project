@@ -23,7 +23,7 @@
                                 <rect y="8" width="10" height="1" fill="black" />
                             </svg>
                         </div>
-                        <ul class="nav__menu menu menu_mobile desktop">
+                        <ul class="nav__menu menu desktop">
                             <li class="menu__item menu__item_red"><a class="menu__link" href="#">Каталог</a></li>
                             <li class="menu__item"><a class="menu__link" href="#">Знижки</a></li>
                             <li class="menu__item"><a class="menu__link" href="#">Блог</a></li>
@@ -68,10 +68,14 @@
                         <!-- <a href="#">
                             <img src="./img/etnodim_main_logo_mobile.svg" alt="ETNODIM logo">
                         </a> -->
-                     <img src="./img/etnodim_main_logo_mobile.svg" alt="ETNODIM logo" />
 
-                            
-                        
+                        <a class="nav__logo-link" href="#">
+                            <picture class="nav__logo">
+                                <source media="(min-width: 1024px)" srcset="./img/etnodim_main_logo_desktop.svg">
+                                <source media="(min-width: 300px)" srcset="./img/etnodim_main_logo_mobile.svg">  
+                                <img src="./img/etnodim_main_logo_mobile.svg" alt="ETNODIM logo">
+                            </picture>
+                        </a>
                     </div>
     
                     <div class="nav__actions">
