@@ -283,6 +283,8 @@ body {
     color: #000000;
 }
 
+/* Card */
+
 .card {
     display: flex;
     flex-direction: column;
@@ -292,6 +294,15 @@ body {
 
     &__illustration {
         background-image: url(./img/card_img1_bg_2x.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+        width: 100%;
+        position: relative;
+    }
+
+    &__illustration:nth-of-type(even) {
+        background-image: url(./img/card_img2_bg_2x.jpg);
         background-position: center;
         background-repeat: no-repeat;
         z-index: 1;
