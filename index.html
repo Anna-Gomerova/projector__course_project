@@ -65,10 +65,6 @@
     
     
                     <div class="nav__logo">
-                        <!-- <a href="#">
-                            <img src="./img/etnodim_main_logo_mobile.svg" alt="ETNODIM logo">
-                        </a> -->
-
                         <a class="nav__logo-link" href="#">
                             <picture class="nav__logo">
                                 <source media="(min-width: 1024px)" srcset="./img/etnodim_main_logo_desktop.svg">
@@ -252,9 +248,10 @@
                         <div class="catalog__content-wrapper">
                             <h1 class="catalog__title heading-main">Жіночі вишиванки</h1>
                             <div class="catalog__navigation">
-                                <input class="filters-mobile__input-main mobile" type="checkbox" id="filters-title-mobile" />
-                                <label class="filters-mobile__label-main mobile" for="filters-title-mobile">Фільтри</label>
-                                <div class="filters-mobile__wrapper mobile">
+                                <div class="filters-mobile">
+                                    <input class="filters-mobile__input-main mobile" type="checkbox" id="filters-title-mobile" />
+                                    <label class="filters-mobile__label-main mobile" for="filters-title-mobile">Фільтри</label>
+                                    <div class="filters-mobile__wrapper mobile">
                                     <form class="filter-form" id="form" action="result.html" method="post">
     
                                         <fieldset class="filter sizes">
@@ -356,7 +353,8 @@
                                         </div> -->
                                         <!-- Кнопку приховано доки не обраний жодний чекбокс - ще не реалізувала -->
                                     </form>
-                                </div>                        
+                                </div>    
+                            </div>                    
                                 <button class="button catalog__button desktop"></button>
                                 <button class="button catalog__button_more desktop"></button>
                                 <div class="catalog__sort">Сортувати за: <span>новинки</span></div>
