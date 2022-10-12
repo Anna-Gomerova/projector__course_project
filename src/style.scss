@@ -432,6 +432,14 @@ body {
     row-gap: 20px;
     align-items: center;
     padding: 20px 0;
+    position: relative;
+
+}
+
+.footer__scroll {
+    position: absolute;
+    top: -15px;
+    
 
 }
 
