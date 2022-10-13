@@ -1,9 +1,13 @@
 @mixin only-desktop {
-    @media screen and (min-width: 1024px) { @content; }
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
 }
 
 @mixin only-mobile {
-    @media screen and (max-width: 1023px) { @content; }
+    @media screen and (max-width: 1023px) {
+        @content;
+    }
 }
 
 @include only-mobile {
@@ -14,11 +18,11 @@
         border: none;
         position: relative;
         display: block;
-    
+
         &__wrapper {
             display: none;
         }
-    
+
         &__input-main {
             appearance: none;
             display: none;
@@ -26,7 +30,7 @@
             width: 0;
             height: 0;
         }
-    
+
         &__label-main {
             display: block;
             margin-bottom: 5px;
@@ -36,55 +40,56 @@
             padding-left: 0px;
             // always on top
             z-index: 100;
-            /* Raleway / 12 bold */
-    
             font-family: 'Raleway', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-style: normal;
-            font-weight: 400;
+            font-weight: 300;
             font-size: 12px;
-            line-height: 166.4%;
-            /* identical to box height, or 20px */
-    
+            line-height: 20px;
+            /* identical to box height */
+
             font-feature-settings: 'pnum' on, 'lnum' on;
-    
+
+            /* black */
+
             color: #000000;
         }
-    
+
         &__label-main:after {
             content: '';
             border: solid black;
             border-width: 0 1px 1px 0;
             display: inline-block;
-    
+
             position: relative;
             top: -3px;
             left: 5px;
-    
+
             width: 5px;
             height: 5px;
-    
+
             transform: rotate(45deg);
             -webkit-transform: rotate(45deg);
         }
-    
+
         &__input-main:checked~&__wrapper {
             display: flex;
             flex-direction: row;
-            
+
             position: absolute;
             top: 0px;
 
             width: 349px;
             max-width: 95vw;
 
-            @media screen and (min-height: 993px) { 
+            @media screen and (min-height: 993px) {
                 width: 150px;
             }
 
             z-index: 5;
-            box-shadow: 6px 6px 8px rgba(179, 179, 179, 0.25), 4px 4px 6px rgba(135, 135, 135, 0.25);
+            box-shadow: 6px 6px 8px rgba(179, 179, 179, 0.25),
+            4px 4px 6px rgba(135, 135, 135, 0.25);
         }
-    
+
         &__input-main:checked~&__label-main:after {
             border-width: 1px 0px 0px 1px;
             top: 0px;
@@ -159,24 +164,24 @@
             border: solid black;
             border-width: 0 1px 1px 0;
             display: inline-block;
-    
+
             position: relative;
             top: -3px;
             left: 5px;
-    
+
             width: 5px;
             height: 5px;
-    
+
             transform: rotate(45deg);
             -webkit-transform: rotate(45deg);
         }
-    
+
         &__input-main:checked~&__label-main:after {
             border-width: 1px 0px 0px 1px;
             top: 0px;
         }
     }
-    
+
     // Container with filter chekboxes
 
     &__wrapper {
