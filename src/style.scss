@@ -351,12 +351,13 @@ body {
 
     // }
 
-    // &__description {
-    //     display: -webkit-box;
-    //     -webkit-box-orient: vertical;
-    //     -webkit-line-clamp: 2;
-    //     overflow: hidden;
-    // }
+    &__description {
+        flex-grow: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
 
     &__price {
         /* Raleway/paragraph bold */
@@ -696,6 +697,7 @@ body {
 
     .card__description {
         margin-top: 10px;
+       
     }
 
 
